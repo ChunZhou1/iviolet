@@ -13,7 +13,7 @@ const AddressContent = ({ callBackForAddress }: AddressContentProps) => {
       <AddressBtnItem text={"A0"} callBackForAddress={callBackForAddress} />
       <AddressBtnItem text={"熊猫"} callBackForAddress={callBackForAddress} />
       <AddressBtnItem text={"饭团"} callBackForAddress={callBackForAddress} />
-      <AddressBtnItem text={"松鼠"} callBackForAddress={callBackForAddress} />
+      <AddressBtnItem text={"松鼠1"} callBackForAddress={callBackForAddress} />
       <AddressBtnItem text={"WEB"} callBackForAddress={callBackForAddress} />
       <AddressBtnItem text={"FOD"} callBackForAddress={callBackForAddress} />
       <AddressBtnItem text={"FHW"} callBackForAddress={callBackForAddress} />
