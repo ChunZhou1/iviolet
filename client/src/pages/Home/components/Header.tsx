@@ -1,5 +1,5 @@
-import React, { useMemo } from "react";
-import { Stack, Grid, Typography, Box, useTheme } from "@mui/material";
+import React from "react";
+import { Stack, Grid, Typography } from "@mui/material";
 
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -19,7 +19,7 @@ export const Header = () => {
   return (
     <>
       <Grid container alignItems="center">
-        <Grid item md={6}>
+        <Grid item md={6} sm={12}>
           <Stack
             direction="column"
             alignItems="flex-start"
@@ -28,15 +28,13 @@ export const Header = () => {
             <img src={logo} style={{ width: "30%" }} />
           </Stack>
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={6} sm={12}>
           <Stack
             direction="column"
             alignItems="flex-end"
             sx={{ marginRight: "5%" }}
           >
-            <Typography variant="h4">
-              29 Singer Court, Toronto Tel: 4372314578
-            </Typography>
+            <Typography variant="h4">iVioletca@gmail.com 4372314578</Typography>
           </Stack>
         </Grid>
       </Grid>
