@@ -10,9 +10,9 @@ import b2 from "../../../../images/bannar22.jpg";
 import b3 from "../../../../images/bannar33.jpg";
 
 const picArray = [
-  <img src={b1} key={"1"} />,
-  <img src={b2} key={"2"} />,
-  <img src={b3} key={"3"} />,
+  <img src={b1} key={"1"} style={{ width: "100%" }} />,
+  <img src={b2} key={"2"} style={{ width: "100%" }} />,
+  <img src={b3} key={"3"} style={{ width: "100%" }} />,
 ];
 
 export const Header = () => {
