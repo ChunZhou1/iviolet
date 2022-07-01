@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack, Grid, Typography } from "@mui/material";
-type TitleProps = {
+export type TitleProps = {
   title1: string;
   title2: string;
   titlePic: string;

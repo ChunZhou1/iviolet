@@ -7,11 +7,36 @@ import { Function } from "./components/Function";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import { useNavigate } from "react-router-dom";
 import inn1 from "../../../images/inn1.jpg";
-const title1Inn = "专业化的旅店(inn)解决方案。满足您各种定制化的需求";
-const title2Inn =
-  "采用彻底的底层开发技术，相比于业界使用的现成模板开发，真正满足您各种高定制化的需求，如定制化的促销方案，各种付款方式";
 
-export const Web = () => {
+import { CharactDataType } from "./components/Charact";
+import { FunctionDataType } from "./components/Function";
+
+import b2 from "../../../images/bannar22.jpg";
+
+import {
+  title1Inn,
+  title2Inn,
+  CharactDataForInn,
+  functionDataForInn,
+} from "../../content";
+
+type ProductContentProps = {
+  title1: string;
+  title2: string;
+  titlePic: string;
+  headerPic: string;
+  charactDataArray: CharactDataType[];
+  functionDataArray: FunctionDataType[];
+};
+
+export const ProductContent = ({
+  title1,
+  title2,
+  titlePic,
+  headerPic,
+  charactDataArray,
+  functionDataArray,
+}: ProductContentProps) => {
   const navigate = useNavigate();
   return (
     <Box style={{ position: "relative" }}>
@@ -37,11 +62,24 @@ export const Web = () => {
         spacing={12}
         sx={{ backgroundColor: "#dae4f5" }}
       >
-        <Header />
-        <Title title1={title1Inn} title2={title2Inn} titlePic={inn1} />
-        <Charact />
-        <Function />
+        <Header headerPic={headerPic} />
+        <Title title1={title1} title2={title2} titlePic={titlePic} />
+        <Charact charactDataArray={charactDataArray} />
+        <Function functionDataArray={functionDataArray} />
       </Stack>
     </Box>
+  );
+};
+
+export const Web = () => {
+  return (
+    <ProductContent
+      title1={title1Inn}
+      title2={title2Inn}
+      titlePic={inn1}
+      headerPic={b2}
+      charactDataArray={CharactDataForInn}
+      functionDataArray={functionDataForInn}
+    />
   );
 };
