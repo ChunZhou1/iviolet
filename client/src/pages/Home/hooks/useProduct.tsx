@@ -9,6 +9,10 @@ export const useProduct = () => {
         url = "/web";
         break;
 
+      case "rest":
+        url = "/rest";
+        break;
+
       default:
         break;
     }

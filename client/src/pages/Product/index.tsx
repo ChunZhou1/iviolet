@@ -7,17 +7,23 @@ import { Function } from "./components/Function";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import { useNavigate } from "react-router-dom";
 import inn1 from "../../../images/inn1.jpg";
+import rest1 from "../../../images/rest1.jpg";
 
 import { CharactDataType } from "./components/Charact";
 import { FunctionDataType } from "./components/Function";
 
 import b2 from "../../../images/bannar22.jpg";
+import b3 from "../../../images/bannar33.jpg";
 
 import {
   title1Inn,
   title2Inn,
   CharactDataForInn,
   functionDataForInn,
+  title1Rest,
+  title2Rest,
+  CharactDataForRest,
+  functionDataForRest,
 } from "../../content";
 
 type ProductContentProps = {
@@ -80,6 +86,19 @@ export const Web = () => {
       headerPic={b2}
       charactDataArray={CharactDataForInn}
       functionDataArray={functionDataForInn}
+    />
+  );
+};
+
+export const Rest = () => {
+  return (
+    <ProductContent
+      title1={title1Rest}
+      title2={title2Rest}
+      titlePic={rest1}
+      headerPic={b3}
+      charactDataArray={CharactDataForRest}
+      functionDataArray={functionDataForRest}
     />
   );
 };

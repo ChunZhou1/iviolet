@@ -27,7 +27,7 @@ export const Product = () => {
       />
       ;
       <ProductItem
-        keyValue={"software"}
+        keyValue={"rest"}
         content={content2}
         imgSrc={p3}
         reverse={true}

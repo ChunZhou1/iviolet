@@ -2,7 +2,7 @@ import * as React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Home } from "./pages/Home";
-import { Web } from "./pages/Product";
+import { Web, Rest } from "./pages/Product";
 
 import "./App.css";
 
@@ -19,6 +19,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/rest" element={<Rest />} />
         <Route path="/web" element={<Web />} />
         <Route path="/" element={<Home />} />
       </Routes>
