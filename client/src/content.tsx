@@ -94,7 +94,7 @@ export const CharactDataForRest = [
 
 export const functionDataForRest = [
   {
-    title: "销售网站",
+    title: "建立销售网站",
     content:
       "支持商品展示，支付，支持即时付款和到店付款，支持各种促销和会员功能",
   },
