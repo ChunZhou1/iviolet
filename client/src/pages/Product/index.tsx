@@ -8,10 +8,12 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import { useNavigate } from "react-router-dom";
 import inn1 from "../../../images/inn1.jpg";
 import rest1 from "../../../images/rest1.jpg";
+import gerWeb from "../../../images/gerWeb.jpg";
 
 import { CharactDataType } from "./components/Charact";
 import { FunctionDataType } from "./components/Function";
 
+import b1 from "../../../images/bannar11.jpg";
 import b2 from "../../../images/bannar22.jpg";
 import b3 from "../../../images/bannar33.jpg";
 
@@ -24,6 +26,10 @@ import {
   title2Rest,
   CharactDataForRest,
   functionDataForRest,
+  title1GerWeb,
+  title2GerWeb,
+  CharactDataForGerWeb,
+  functionDataForGerWeb,
 } from "../../content";
 
 type ProductContentProps = {
@@ -99,6 +105,19 @@ export const Rest = () => {
       headerPic={b3}
       charactDataArray={CharactDataForRest}
       functionDataArray={functionDataForRest}
+    />
+  );
+};
+
+export const GerWeb = () => {
+  return (
+    <ProductContent
+      title1={title1GerWeb}
+      title2={title2GerWeb}
+      titlePic={gerWeb}
+      headerPic={b1}
+      charactDataArray={CharactDataForGerWeb}
+      functionDataArray={functionDataForGerWeb}
     />
   );
 };

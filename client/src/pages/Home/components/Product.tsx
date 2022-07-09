@@ -12,6 +12,9 @@ const content1 =
 const content2 =
   "定制化的软件开发，特别是针对各种类型的电子商务软件（餐饮，小型超市）的定制化开发";
 
+const content3 =
+  "普通网站和手机App开发，包括展示型网站以及普通网站增加付款等电子商务功能";
+
 export const Product = () => {
   const handleCallBackForProduct = useProduct();
   return (
@@ -25,12 +28,20 @@ export const Product = () => {
         imgSrc={p1}
         callbackForproduct={handleCallBackForProduct}
       />
-      ;
+
       <ProductItem
         keyValue={"rest"}
         content={content2}
         imgSrc={p3}
         reverse={true}
+        callbackForproduct={handleCallBackForProduct}
+      />
+
+      <ProductItem
+        keyValue={"gerWeb"}
+        content={content3}
+        imgSrc={p2}
+        reverse={false}
         callbackForproduct={handleCallBackForProduct}
       />
     </Stack>

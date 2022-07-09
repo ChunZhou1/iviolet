@@ -117,3 +117,56 @@ export const functionDataForRest = [
     content: "了解不同品种在不同时间的销售情况，今后更可扩展来料管理功能",
   },
 ];
+
+export const title1GerWeb = "一般电子商务网站，展示型网站及手机app开发";
+export const title2GerWeb =
+  "为您原有的展示型网站增加电子商务功能，将网站流量转变为价值";
+
+export const CharactDataForGerWeb = [
+  {
+    icon: <MilitaryTechIcon color="primary" sx={{ fontSize: "100px" }} />,
+    title: "电子商务功能",
+    content: "支持多种付款方式，包括微信和支付宝",
+  },
+  {
+    icon: <MilitaryTechIcon color="secondary" sx={{ fontSize: "100px" }} />,
+    title: "为您原有的网站进行定制化的改造",
+    content:
+      "对原有的网站不满意？交给我们，对您的网站进行重新设计，增加您需要的功能，高度定制化是我们的优势",
+  },
+  {
+    icon: <MilitaryTechIcon color="success" sx={{ fontSize: "100px" }} />,
+    title: "让更多人知道您的网站",
+    content: "提供成熟的网站营销方案，提高您网站的曝光率",
+  },
+  {
+    icon: <MilitaryTechIcon sx={{ fontSize: "100px", color: pink[500] }} />,
+    title: "从网站到手机APP，支持安卓和ios平台",
+    content:
+      "如果您需要开发手机APP，我们采用成熟的React native框架可以同时针对安卓和IOS开发，降低您的投入",
+  },
+];
+
+export const functionDataForGerWeb = [
+  {
+    title: "展示型网站的开发",
+    content:
+      "包含公司介绍，相关产品和服务，成功案例，联系方法等内容，宣传您的公司",
+  },
+
+  {
+    title: "电子商务网站的开发",
+    content: "在展示型网站的基础上增加付款功能",
+  },
+  {
+    title: "手机APP开发",
+    content: "根据您的要求，开发安卓和IOS平台APP",
+  },
+  {
+    title: "电子商务网站的促销",
+    content: "提供方案增加对谷歌搜索平台上的曝光率",
+  },
+];
+
+export const intro =
+  "iViolet公司成立于2017年，从成立开始，公司致力于为客户提供成熟的电子商务解决方案。公司主要业务为各种类型的电子商务型网站，手机App的开发，尤其擅长旅馆业，小型快消（如奶茶，咖啡）等定制型电子商务软件。公司产品包括网站开发，针对奶茶咖啡等餐厅的专用软件的开发。公司开发的软件已经被多个客户采用。在同类型公司中，我们提供的产品具备很高的性价比，我们愿意为您提供专业的定制化的服务。";

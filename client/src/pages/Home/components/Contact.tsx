@@ -10,7 +10,7 @@ export const Contact = () => {
           联系我们
         </Typography>
         <Typography variant="h4" color={"white"}>
-          iViolet technology Inc.
+          iViolet Technology Inc.
         </Typography>
         <Typography variant="h4" color={"white"}>
           Address: 29 Singer Court, Toronto
@@ -19,7 +19,7 @@ export const Contact = () => {
           Email: ivioletca@gmail.com
         </Typography>
         <Typography variant="h4" color={"white"}>
-          tel: +1 4372314578
+          Tel: +1 4372314578
         </Typography>
       </Stack>
     </Box>

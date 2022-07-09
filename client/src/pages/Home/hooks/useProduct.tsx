@@ -13,6 +13,10 @@ export const useProduct = () => {
         url = "/rest";
         break;
 
+      case "gerWeb":
+        url = "/gerWeb";
+        break;
+
       default:
         break;
     }
